@@ -1,4 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Feb 21 17:43:05 CST 2025
-@default-howbuy-nexus-http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/.lastUpdated=1740130985773
-http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/.error=Could not transfer artifact com.baomidou\:mybatis-plus\:pom\:3.4.3.4 from/to howbuy-nexus (http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/)\: mvn.intelnal.howbuy.com
