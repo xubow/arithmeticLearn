@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 21 17:43:05 CST 2025
+@default-howbuy-nexus-http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/.lastUpdated=1740130985717
+http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/.error=Could not transfer artifact org.apache.maven.plugins\:maven-surefire-plugin\:jar\:3.2.2 from/to howbuy-nexus (http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/)\: mvn.intelnal.howbuy.com

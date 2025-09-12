@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Feb 21 19:32:47 CST 2025
+@default-howbuy-nexus-http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/.lastUpdated=1740137567434
+http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/.error=Could not transfer artifact org.apache.maven.plugins\:maven-assembly-plugin\:pom\:2.2-beta-5 from/to howbuy-nexus (http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/)\: transfer failed for http\://mvn.intelnal.howbuy.com/nexus/content/groups/public/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-5/maven-assembly-plugin-2.2-beta-5.pom, status\: 502 Bad Gateway
