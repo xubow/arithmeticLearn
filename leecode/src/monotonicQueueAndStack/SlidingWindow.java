@@ -1,5 +1,8 @@
 package monotonicQueueAndStack;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 /**
  * @author chenyves
  * @description: (滑动窗口)
@@ -13,12 +16,44 @@ package monotonicQueueAndStack;
 public class SlidingWindow {
 
 
+    public static void main(String[] args) {
+        int[] arr = new int[]{1, 3, -1, -3, 5 ,3, 6, 7};
+        printMax(arr, 3);
+        System.out.println("------");
+        printMin(arr, 3);
+    }
 
-//    int findMax(int[] arr, int k) {
-//
-//    }
-//    int findMin(int[] arr, int k) {
-//
-//    }
+
+   static void printMax(int[] arr, int k) {
+        Deque<Integer> deque = new LinkedList<>();
+        for (int i = 0; i < arr.length; i++) {
+            while(!deque.isEmpty() && arr[deque.peekLast()] < arr[i]) {
+                deque.pollLast();
+            }
+            deque.offerLast(i);
+            if (deque.peekFirst() + k == i) {
+                deque.pollFirst();
+            }
+            if (i >= k-1) {
+                System.out.printf("区间【%d-%d】，最大值：%d \n", i-k+1, i, arr[deque.peekFirst()]);
+            }
+        }
+    }
+
+   static void printMin(int[] arr, int k) {
+        Deque<Integer> deque = new LinkedList<>();
+        for (int i = 0; i < arr.length; i++) {
+            while(!deque.isEmpty() && arr[deque.peekLast()] > arr[i]) {
+                deque.pollLast();
+            }
+            deque.offerLast(i);
+            if (deque.peekFirst() + k == i) {
+                deque.pollFirst();
+            }
+            if (i >= k-1) {
+                System.out.printf("区间【%d-%d】，最小值：%d \n", i-k+1, i, arr[deque.peekFirst()]);
+            }
+        }
+    }
 
 }
